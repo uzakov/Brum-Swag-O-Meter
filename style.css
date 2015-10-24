@@ -25,3 +25,17 @@ a:visited{
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
 }
+#snoop{
+  position: fixed;
+  top: 70%;
+  left: 70%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+#frog{
+  position: fixed;
+  top: 70%;
+  left: 7%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
