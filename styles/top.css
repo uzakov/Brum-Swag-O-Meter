@@ -1,6 +1,7 @@
 body{
   background-color: black;
 }
+
 .container{
   border-radius: 20px;
   padding-top: 50px;
@@ -16,7 +17,9 @@ img{
 p{
   font-size: 20px;
 }
-
+.images{
+  width: inherit;
+}
 
 
 a:link{
@@ -33,12 +36,20 @@ a:visited{
   margin-top: 20px;
   padding: 15px;
   font-size: 20px;
-  
+
 }
 .header_sticky{
   width: 100%;
   position: fixed;
   top: 4px;
   left: 35%;
-  /* bring your own prefixes */
   }
+  @media screen and (max-width: 520px) {
+    .header_sticky{
+      position: fixed;
+      top: 0;
+      left: 19px;
+      width: 100%;
+      z-index: 9999;
+    }
+}
