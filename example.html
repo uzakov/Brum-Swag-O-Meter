@@ -6,7 +6,9 @@
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="clarifai-basic.js"></script>
     <script type="text/javascript" src="example.js"></script>
-    <button onclick="positive()">SwagIt</button>
-    <button onclick="predict()">PredictIt</button>
+    <input type="text" id="image" value=""/><br/>
+    <button onclick="positive(); train();">Swag It</button>
+    <button onclick="negative(); train();">Unswag It</button><br/>
+    <button onclick="predict()">How much swag do you have?</button>
   </body>
 </html>

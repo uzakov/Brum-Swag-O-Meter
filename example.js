@@ -10,9 +10,14 @@ function init(){
     );
 }
 
+
+function getImageURL() {
+  return $("#image").val();
+}
+
 // send a 'positive' url
 function positive(){
-    clarifai.positive(phishPositives[0], 'swag', cb).then(
+    clarifai.positive(getImageURL(), 'swag', cb).then(
         promiseResolved,
         promiseRejected
     );
@@ -20,7 +25,7 @@ function positive(){
 
 // send a 'negative' url
 function negative(){
-    clarifai.negative(phishNegatives[0], 'phish', cb).then(
+    clarifai.negative(getImageURL(), 'swag', cb).then(
         promiseResolved,
         promiseRejected
     );
@@ -28,7 +33,7 @@ function negative(){
 
 // explicitly train our concept
 function train(){
-    clarifai.train('phish', cb).then(
+    clarifai.train('swag', cb).then(
         promiseResolved,
         promiseRejected
     );
@@ -43,7 +48,7 @@ function promiseRejected(obj){
 }
 
 function predict(){
-    clarifai.predict('https://scontent-lhr3-1.xx.fbcdn.net/hphotos-xfa1/v/t34.0-12/804515_995357970484277_423842525_n.jpg?oh=5679818c487f627f32830c1044fa53af&oe=562D78C8', 'swag', cb).then(
+    clarifai.predict(getImageURL(), 'swag', cb).then(
         promiseResolved,
         promiseRejected
     );
