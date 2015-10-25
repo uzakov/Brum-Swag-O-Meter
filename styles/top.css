@@ -2,8 +2,11 @@ body{
   background-color: black;
 }
 .container{
-  background-color: white;
   border-radius: 20px;
+  padding-top: 50px;
+  color: #fff;
+background-color: #337ab7;
+border-color: #2e6da4;
 }
 img{
   width: 100%;
@@ -13,3 +16,29 @@ img{
 p{
   font-size: 20px;
 }
+
+
+
+a:link{
+  font-size: 30px;
+  border-radius: 7px;
+  padding: 10px;
+}
+a:visited{
+  font-size: 30px;
+  border-radius: 7px;
+  padding: 10px;
+}
+.btn-primary{
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 20px;
+  
+}
+.header_sticky{
+  width: 100%;
+  position: fixed;
+  top: 4px;
+  left: 35%;
+  /* bring your own prefixes */
+  }
