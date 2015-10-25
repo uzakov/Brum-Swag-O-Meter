@@ -58,8 +58,5 @@ function cb(obj){
     console.log('cb', obj);
 }
 
-var phishPositives = [
-  'https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xpa1/v/t34.0-12/12178296_995357990484275_903342983_n.jpg?oh=1c3ed5c0e0bc39ecb68c2fe3a318e723&oe=562E5371&__gda__=1445897774_ea59f5c139fd2fcc83c1d72bb0290638'
-];
 
 $(document).ready(init);
