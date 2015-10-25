@@ -1,6 +1,10 @@
 body{
   background-color: black;
 }
+.content{
+  width: 100%;
+  height: 100%;
+}
 h1{
   color: white;
   font-size: 55px;
@@ -18,6 +22,11 @@ a:visited{
   font-size: 30px;
   border-radius: 7px;
 }
+#git{
+font-size: 15px;
+border-radius: 7px;
+}
+
 .block{
   position: fixed;
   top: 50%;
@@ -25,17 +34,45 @@ a:visited{
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
 }
-#snoop{
+#mlg-on{
   position: fixed;
-  top: 70%;
-  left: 70%;
-  /* bring your own prefixes */
+  padding: 10px;
+  font-size: 30px;
+  top: 89%;
+  left:92%;
   transform: translate(-50%, -50%);
+  -ms-transform: rotate(-45deg); /* IE 9 */
+   -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+   transform: rotate(-45deg);
 }
-#frog{
+#mlg-off{
   position: fixed;
-  top: 70%;
-  left: 7%;
-  /* bring your own prefixes */
+  padding: 10px;
+  font-size: 30px;
+  top: 2%;
+  left:-2.5%;
   transform: translate(-50%, -50%);
+  -ms-transform: rotate(-45deg); /* IE 9 */
+   -webkit-transform: rotate(-45); /* Chrome, Safari, Opera */
+   transform: rotate(-45deg);
+}
+#clarifai{
+  width: inherit;
+}
+.images{
+  width: inherit;
+}
+@media screen and (max-width: 520px) {
+    .main{
+      width: inherit;
+      height: inherit;
+    }
+    #mlg-off{
+      top: 1.5%;
+      left:-5.5%;
+    }
+    #mlg-on{
+      top: 88%;
+      left:79%;
+    }
 }
