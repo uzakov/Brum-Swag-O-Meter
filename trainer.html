@@ -4,15 +4,10 @@
     <title>Swag-o-meter trainer</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="clarifai-basic.js"></script>
-    <script type="text/javascript" src="trainer.js"></script>
+    <script src="imagepredict.js"></script>
   </head>
   <body>
-    <form id="trainer">
       <label> Delimit images with a new line. </label><br/>
-      <input type="text" id="images" value="hi dere"/><br/>
-      <input value="notSwag" type="button"/>
-      <input value="swag" id="eg" type="button"/>
-    </form>
+      <button onclick="predicter()">Do it</button>
   </body>
 </html>
