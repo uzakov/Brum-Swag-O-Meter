@@ -1,14 +1,66 @@
-<html>
+
+
+<!--
+ _________   __      __     _____      ________
+/   _____/  /  \    /  \   /  _  \    /  _____/
+\_____  \   \   \/\/   /  /  /_\  \  /   \  ___
+/        \   \        /  /    |    \ \    \_\  \
+/_______  /   \__/\__/   \____|____/  \________/
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Clarifai Custom Training JS Library Example</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="Swag, Meter, Clarify, Machine learning ">
+    <meta name="author" content="Alikhan Uzakov, Callum Kendrick, Mala Sadik">
+    <link href="doge.ico" rel="icon" type="image/x-icon" />
+    <title>Swag - O - Meter</title>
+
+    <!-- You Shall Not Pass! -->
+
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic|Work+Sans:300,400,500,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/animate.min.css">
+    <link rel="stylesheet" href="styles/style.css" >
+    <link rel="stylesheet" href="styles/bootstrap-social.css" >
+
   </head>
   <body>
-    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <div class="content">
+    <div class="images hidden">
+      <img class="animated infinite rollOut" src="images/doge.png" alt="Doge the doge">
+      <img id="snoop" class="animated infinite zoomOutUp" src="gifs/snoop.gif" alt="Snoop Dog">
+      <img id="frog" class="animated infinite tada" src="gifs/frog.gif" alt="Get Out Frog">
+      <img id="nyan" class="animated infinite slideOutRight" src="gifs/nyan.gif" alt="Nyan Cat">
+    </div>
+    <div class=" main block block-inverse text-center">
+      <img id="clarifai" class="bounceIn swag" src="images/clarifai.png" alt="Clarifai logo">
+      <h1 class="flash swag">Swag - O - Meter</h1>
+      <input type="text" id="image" value=""/><br/>
+      <button class="btn btn-primary" onclick="positive(); train();">Swag It</button>
+      <button class="btn btn-primary" onclick="negative(); train();">Unswag It</button><br/>
+      <button class="btn btn-primary" id="swagy" onclick="predict()">How much swag do you have?</button>
+      <hr>
+      <a class="swag wobble btn btn-block btn-social btn-github" id="git" href="https://github.com/uzakov/Brum-Swag-O-Meter">
+  <i class="glyphicon glyphicon-wrench"></i>
+   Fork me on GitHub.
+</a>
+    </div>
+    <!--
+    This is the end, I have hidden some cool stuff in the code.
+    I hope you find it, my friend.
+    </div> -->
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
     <script type="text/javascript" src="clarifai-basic.js"></script>
     <script type="text/javascript" src="example.js"></script>
-    <input type="text" id="image" value=""/><br/>
-    <button onclick="positive(); train();">Swag It</button>
-    <button onclick="negative(); train();">Unswag It</button><br/>
-    <button onclick="predict()">How much swag do you have?</button>
+
   </body>
 </html>
